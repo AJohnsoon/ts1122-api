@@ -1,0 +1,40 @@
+{
+  "name": "ts1122-nodejs-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "git@github.com:allan-leal/ts1122-api.git",
+  "author": "Allan Johnson <allanjohnson.leal@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/server/index.ts",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-prettier": "3.2.0",
+    "prettier": "^2.5.1",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0",
+    "typeorm": "^0.2.41",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@hapi/ammo": "^5.0.1",
+    "@hapi/boom": "^9.1.4",
+    "@hapi/bounce": "^2.0.0",
+    "@hapi/hapi": "^20.2.1",
+    "@types/cors": "^2.8.12",
+    "@types/hapi__hapi": "^20.0.10",
+    "cors": "^2.8.5",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13",
+    "require-hapiroutes": "^1.0.0"
+  }
+}
